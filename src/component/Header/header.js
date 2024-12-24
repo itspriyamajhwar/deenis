@@ -8,14 +8,20 @@ const Header = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <header className="header">
-      <div className="container">
-        {/* Logo */}
-        <div className="logo">
+    <div className="container">
+      {/* Logo */}
+      <div className="logo">
+        <a href="#home" onClick={closeMenu}>
           <span>DEENIS</span>
           <span className="highlight">LAW CHAMBER</span>
-        </div>
+        </a>
+      </div>
 
         {/* Hamburger Icon */}
         <div className="hamburger" onClick={toggleMenu}>
@@ -30,22 +36,22 @@ const Header = () => {
         <nav className={`nav ${menuOpen ? "active" : ""}`}>
           <ul className="nav-links">
             <li>
-              <a href="#home">Home</a>
+              <a href="#home" onClick={closeMenu}>Home</a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a href="#about" onClick={closeMenu}>About</a>
             </li>
             <li>
-              <a href="#services">Services</a>
+              <a href="#services" onClick={closeMenu}>Services</a>
             </li>
             <li>
-              <a href="#registration">Registration</a>
+              <a href="#registration" onClick={closeMenu}>Registration</a>
             </li>
             <li>
-              <a href="#onlineconsultant">Online Consultant</a>
+              <a href="#onlineconsultant" onClick={closeMenu}>Online Consultant</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#contact" onClick={closeMenu}>Contact</a>
             </li>
           </ul>
         </nav>

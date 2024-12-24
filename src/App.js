@@ -11,7 +11,8 @@ import BookConsultant from "./component/BookConsultant/BookConsultant";
 import Contact from "./component/Contact/Contact";
 import Footer from "./component/Footer/footer";
 import Popup from "./component/PopUp/popup";
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import ServiceDetails from "./component/ServiceDetails/ServiceDetails";
 
 
 function App() {
@@ -50,6 +51,10 @@ function App() {
             </>
           }
         />
+
+<Route path="/" element={<Services />} />
+                <Route path="/services/:id" element={<ServiceDetails />} />
+             
         <Route path="/book-consultant" element={<BookConsultant />} />
       </Routes>
 
