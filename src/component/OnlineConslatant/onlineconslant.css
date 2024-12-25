@@ -1,0 +1,254 @@
+/* General styling for the section */
+.section {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  .section h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Swiper card container */
+  .container.swiper {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .card-wrapper {
+    position: relative;
+  }
+  
+  .card-list {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 1rem 0;
+    scroll-behavior: smooth;
+  }
+  
+  .card-item {
+    flex: 0 0 calc(100% / 3 - 1rem);
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(246, 244, 244, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card-item:hover {
+    transform: translate(-5px);
+    box-shadow: 0 8px 16px rgba(247, 246, 246, 0.2);
+  }
+  
+  .card-link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .badge {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    margin: 1rem;
+    text-align: center;
+  }
+  
+  .card-button {
+    margin: 1rem auto;
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #cedae7;
+    cursor: pointer;
+  }
+  
+
+  /* Swiper navigation buttons */
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #007bff;
+    color: #fff;
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .swiper-button-prev {
+    left: -1.5rem;
+  }
+  
+  .swiper-button-next {
+    right: -1.5rem;
+  }
+  
+  /* Pricing section */
+  .Mobdcontainer {
+    margin-top: 3rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .dropdown {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+  }
+  
+  .pricing-options {
+    margin: 1rem 0;
+  }
+  
+  .price-option {
+    margin: 0.5rem 0;
+  }
+  
+  .price-option input {
+    margin-right: 0.5rem;
+  }
+  
+  .book-btn {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .book-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Featured features section */
+  .feacontainer {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  
+  .feature {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+  
+  .feature-box {
+    flex: 0 0 calc(100% / 3 - 1rem);
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  .feature-box h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .feature-box p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-box button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    background-color: #007bff;
+    border: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .feature-box button:hover {
+    background-color: #a1c2e5;
+  }
+  
+  .view-all {
+    display: inline-block;
+    margin-top: 2rem;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1rem;
+  }
+  
+  .view-all:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .card-wrapper{
+      width: 100% ;
+    }
+    .card-item {
+      flex: 0 0 calc(100% / 2 - 1rem);
+    }
+  
+    .feature-box {
+      flex: 0 0 calc(100% / 2 - 1rem);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card-item {
+      flex: 0 0 100%;
+    }
+  
+    .feature-box {
+      flex: 0 0 100%;
+    }
+  
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: 2rem;
+      height: 2rem;
+    }
+  
+    .section h1 {
+      font-size: 2rem;
+    }
+  }
+  

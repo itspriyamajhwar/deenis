@@ -1,0 +1,128 @@
+/* Hero Section */
+.service-hero {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #f9f9f9;
+    border-bottom: 2px solid #ddd;
+}
+
+.service-image {
+    max-width: 50%;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.service-hero-content {
+    flex: 1;
+}
+
+.service-hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.service-hero-content p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Features Section */
+.service-features {
+    padding: 20px;
+    background: #fff;
+}
+
+.service-features h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.service-features ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.service-features ul li {
+    background: #f1f1f1;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    color: #555;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials Section */
+.service-testimonials {
+    padding: 20px;
+    background: #f9f9f9;
+}
+
+.service-testimonials h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.testimonial {
+    margin: 10px auto;
+    max-width: 700px;
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-comment {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.testimonial-name {
+    font-size: 1rem;
+    color: #888;
+    text-align: right;
+}
+
+/* Contact CTA */
+.contact-cta {
+    padding: 20px;
+    text-align: center;
+    background: #007bff;
+    color: white;
+    margin-top: 20px;
+}
+
+.contact-cta h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.contact-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.contact-button {
+    padding: 10px 20px;
+    background: white;
+    color: #007bff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background: #0056b3;
+    color: white;
+}

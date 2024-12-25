@@ -1,0 +1,148 @@
+/* Styles for the Services component */
+.section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.Servicescontainer h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.deals-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 0 auto;
+    padding: 1 1rem;
+}
+
+.deal-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.deal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.deal-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+}
+
+.deal-content {
+    padding: 1rem;
+}
+
+.deal-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.deal-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #222;
+}
+
+.deal-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+.deal-content button{
+    height: 25
+    px;
+    width: 80px;
+    background-color: #1b6abe;
+    color: white;
+    border: #1b6abe;
+}
+.contact-button:hover {
+    background-color: #137beb;
+}
+
+
+.details-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.details-button:hover {
+    background-color: #0056b3;
+}
+
+.service-details {
+    padding: 20px;
+    text-align: center;
+}
+
+.service-details img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.service-details p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .section {
+        padding: 1.5rem;
+    }
+
+    .Servicescontainer h2 {
+        font-size: 1.8rem;
+    }
+
+    .deal-card img {
+        height: 150px;
+    }
+
+    .deal-title {
+        font-size: 1rem;
+    }
+
+    .deal-description {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .Servicescontainer h2 {
+        font-size: 1.5rem;
+    }
+
+    .deal-card img {
+        height: 120px;
+    }
+
+    .deal-title {
+        font-size: 0.9rem;
+    }
+
+    .deal-description {
+        font-size: 0.8rem;
+    }
+}
