@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/main
 import React, { useState } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -62,6 +65,7 @@ function App() {
       {/* Footer stays persistent across all routes */}
       <Footer />
     </Router>
+<<<<<<< HEAD
 =======
 import logo from './logo.svg';
 import './App.css';
@@ -85,6 +89,8 @@ function App() {
       </header>
     </div>
 >>>>>>> a6aefb5 (Initialize project using Create React App)
+=======
+>>>>>>> upstream/main
   );
 }
 

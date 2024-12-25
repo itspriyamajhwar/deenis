@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 node_modules/
 build/
 .env
@@ -28,3 +29,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 >>>>>>> a6aefb5 (Initialize project using Create React App)
+=======
+node_modules/
+build/
+.env
+.vercel
+>>>>>>> upstream/main
